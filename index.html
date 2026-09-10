@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the zj-voice Android app">
+  <title>zj-voice privacy policy</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.55; }
+    body { max-width: 48rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1, h2 { line-height: 1.2; }
+    h1 { margin-bottom: .25rem; }
+    h2 { margin-top: 2rem; }
+    a { color: #3977d4; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>zj-voice privacy policy</h1>
+    <p>Effective September 10, 2026</p>
+
+    <p>
+      zj-voice is a private voice-control client for AI coding agents. This policy describes
+      how the zj-voice Android app and its companion service operated by Justin Garofolo handle
+      information.
+    </p>
+
+    <h2>Information processed</h2>
+    <ul>
+      <li>
+        <strong>Microphone audio.</strong> When you start a voice session or answer a voice
+        prompt, the app captures audio and streams it to your configured zj-voice service.
+        The service sends that audio to OpenAI to transcribe speech and generate responses.
+      </li>
+      <li>
+        <strong>Commands and agent activity.</strong> The service processes transcripts,
+        requested actions, task state, agent responses, and delivery acknowledgements so it can
+        act on a request and report the outcome.
+      </li>
+      <li>
+        <strong>Technical identifiers and diagnostics.</strong> The app and service process
+        random client, session, operation, and event identifiers, connection state, timestamps,
+        app version, and error information needed to authenticate the client, resume operations,
+        prevent duplicate actions, and diagnose failures.
+      </li>
+      <li>
+        <strong>Configuration and credentials.</strong> The app stores the private service
+        address and authentication credentials that you configure. Credentials are stored in
+        app-private storage and protected with Android Keystore encryption where supported by
+        the control connection.
+      </li>
+    </ul>
+
+    <p>
+      The app does not contain advertising or analytics SDKs. We do not sell personal
+      information or use it for advertising, profiling, credit decisions, or marketing.
+    </p>
+
+    <h2>How information is used and disclosed</h2>
+    <p>
+      Information is used only to provide, secure, maintain, and troubleshoot zj-voice. Audio
+      and the associated request content are disclosed to OpenAI as a service provider for
+      transcription, language processing, and synthesized speech. OpenAI handles that data
+      under its applicable business and API data terms. The service is hosted on infrastructure
+      controlled by the developer. Information may also be disclosed when required by law or
+      to protect the security and integrity of the service.
+    </p>
+
+    <h2>Storage and retention</h2>
+    <p>
+      zj-voice does not intentionally retain raw microphone audio after streaming and processing
+      complete. OpenAI may retain API data according to the account's data-control settings and
+      its applicable policies. The companion service retains command text, task outcomes, and
+      provenance needed to explain and recover operations for up to 30 days, subject to a 1 GiB
+      storage cap. Security and operational records may be retained longer where needed to
+      protect the service or comply with law.
+    </p>
+    <p>
+      On-device configuration, encrypted credentials, cached agent state, and pending-operation
+      records remain until they are replaced, cleared by the app, or removed by clearing app
+      storage or uninstalling the app.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      The app is designed to connect only to a private companion service across an encrypted
+      NetBird network. Credentials are kept in Android app-private storage and Android Keystore
+      is used for control credentials. No security measure eliminates all risk.
+    </p>
+
+    <h2>Your choices and deletion</h2>
+    <p>
+      Microphone access can be revoked in Android settings. You can stop collection by ending a
+      voice session. Clearing app storage or uninstalling zj-voice removes its on-device data.
+      To request deletion of data retained by the companion service, email
+      <a href="mailto:jgarofolo.dev@gmail.com">jgarofolo.dev@gmail.com</a>. Requests are
+      verified to prevent unauthorized deletion and completed unless retention is required for
+      security or legal obligations.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      zj-voice is not directed to children and is intended only for users aged 18 or older. We
+      do not knowingly collect personal information from children.
+    </p>
+
+    <h2>Changes</h2>
+    <p>Material changes will be posted on this page with a revised effective date.</p>
+
+    <h2>Contact</h2>
+    <p>
+      Justin Garofolo<br>
+      <a href="mailto:jgarofolo.dev@gmail.com">jgarofolo.dev@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
